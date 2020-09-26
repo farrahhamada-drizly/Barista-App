@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Orders</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="messages">
+    <div class="row">
+  <div class="column" style="background-color:#FCDED7;">
+    <!-- <div class="col-sm-6"> -->
+      <h3>Messages</h3>
+      <ul class="order">
+      <% for(var i=0; i<order.length; i++) {%>
+          <% if (!order[i].orderDone) { %>
+        <li class="order">
+          <span><%= order[i].name %></span>
+          <span><%= order[i].order %></span>
+          <span><%= order[i].orderTime %></span>
+          <input id="barista" type="text" value="" placeholder="Completed By">
+          <button class="replied" type="button" name="button" value="<%=order[i]._id%>">Done</button>
+        </li>
+        <% } %>
+      <% } %>
+
+      </ul>
+      </div>
+      <div class="column" style="background-color:#bbb;">
+
+      <h3>Replied</h3>
+      <ul class="order">
+
+      <% for(var i=0; i<order.length; i++) {%>
+          <% if (order[i].orderDone) { %>
+        <li class="message2">
+          <span><%= order[i].name %></span>
+          <span><%= order[i].order %></span>
+          <span><%= order[i].orderTime %></span>
+          <span><%= order[i].barista %></span>
+          <span data-id="<%=order[i]._id%>"><i class="fa fa-trash" aria-hidden="true"></i></span>
+        </li>
+        <% } %>
+      <% } %>
+
+      </ul>
+
+
+      </div>
+
+    <script src="order.js"></script>
+  </body>
+
+</html>

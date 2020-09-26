@@ -1,0 +1,92 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  background-image: url('https://recesscoffee.com/recess/wp-content/uploads/2020/03/DSC_0001.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Pacifico', cursive;
+  color:  #f5f2d0;
+}
+input{
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+}
+h1{
+  font-size: 45px;
+}
+
+* {
+  box-sizing: border-box;
+}
+.signup{
+
+  color:#200020;
+  font-family: 'Crimson Text', serif;
+}
+.profile{
+
+ display: block;
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.messages{
+
+  font-family: 'Crimson Text', serif;
+  font-size: 20px;
+}
+.login{
+
+  color:#200020;
+  font-family: 'Crimson Text', serif;
+}
+.index{
+
+
+  color:#200020;
+  font-family: 'Crimson Text', serif;
+
+}
+.indexImg{
+
+  position: absolute;
+  right: 20%;
+  height: 400px;
+  width: 400px;
+  max-width: 100%;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  padding-left:  20px;
+  padding-right: 20px;
+  height: 500px;
+  font-family: 'Crimson Text', serif;
+  font-size: 30px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+.messages,h2{
+  font-family: 'Crimson Text', serif;
+  padding-left: 20px;
+}
+
+.messages,li{
+  padding-left: 20px;
+}
+
+ button{
+   cursor: pointer;
+   background-color: lightgrey;
+
+}
